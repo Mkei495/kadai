@@ -49,13 +49,13 @@ public class Kadai extends JFrame{
 		button1.addActionListener(
 				new ActionListener(){
 					public void actionPerformed(ActionEvent event){
-					try {
-						FileWriter fw = new FileWriter(new File("Test.txt"));;
-						fw.write(area.getText());
-						fw.close();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+						try {
+							FileWriter fw = new FileWriter(new File("Test.txt"));;
+							fw.write(area.getText());
+							fw.close();
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
 					}
 				}
 				);
